@@ -1,34 +1,33 @@
 BeforePhylo
 ==========
-
-a Perl script for manipulating multiple sequence alignments for phylogenetic reconstruction
+Es un script para manipular alineamientos de múltiples secuencias para la reconstrucción filogenética.
 
 Version 0.9.0
 
-by Qiyun Zhu (<qiyunzhu@gmail.com>)
+Escrito por  Qiyun Zhu (<qiyunzhu@gmail.com>)
 
-## Features
+## Características
 
-* Concatenate multiple MSAs and generate partition table for RAxML, MrBayes and BEAST
-* Remove empty sites, fill gaps and/or ends, replace ambiguous codes with 'N's
-* Translate taxon names into numbers or based on a dictionary
-* Extract subset of sequences based on a list
-* Divide MSA by codon position or by a partition table
-* Convert formats (FASTA, NEXUS and Phylip)
+* Permite concatenar múltiples alineamientos y generar tablas de particiones para RAxML, MrBayes y BEAST
+* Remueve sitios vacíos, llena gaps y reemplaza los códigos ambiguos por N s. 
+* Traduce los nombres de los taxones en números basados en un diccionario 
+* Extrae subsets de secuencias basados en una lista 
+* Divide alineamientos por posición del codón o por particiones
+* Convierte de un formato a otro  (FASTA, NEXUS y Phylip)
 
-## Usage
+## Uso
 
-    perl BeforePhylo.pl [option(s)] [MSA(s)]
+    perl BeforePhylo.pl [opcione(s)] [MSA(s)]
 
 ### Input:
 
 One or more MSA files in FASTA format.
 
-### Options:
+### Opciones:
 
 - `-type=<dna|protein|condon>`
 
-    Type of data (default=dna).
+    Tipo de datos (default=dna).
 
 - `filter=<taxa list file>`
 
